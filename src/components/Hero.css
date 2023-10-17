@@ -1,0 +1,97 @@
+.mask{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.into-img{
+width: 100%;
+height: 400px;
+background-size: cover;
+background-position: center center;
+object-fit: cover;
+} 
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 400px;
+    position:absolute;
+    top:0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6;
+
+}
+.hero{
+    height: 100%;
+    width: 100%;
+}
+.hero .content{
+    position: absolute;
+    transform: translate(.50%,-50%);
+    top:50%;
+    left:50%;
+    text-align: center;
+}
+.hero .content h1{
+    font-size: 4rem;
+    padding:0.6rem 0 1.5rem;
+    color: #fff;
+}
+.hero .content p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+}
+.content .btn{
+    margin: 20px ;
+    padding: 5px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: rgb(248, 217, 15);
+    color: #222;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.content .btn2 {
+    margin: 20px;
+    padding: 5px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    /* background: rgb(248, 217, 15); */
+    color: #222;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+.btn-light {
+    background-color: transparent;
+    color: #fff;
+
+}
+.btn2-light {
+    /* background-color: transparent; */
+    color: #fff;
+
+}
+
+.btn:hover {
+    background: rgb(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s;
+}
+@media screen and(max-width:640px) 
+{
+    .hero .content h1 {
+            font-size: 3rem;
+         
+        }
+    
+        .hero .content p {
+            font-size: 1.4rem;
+            
+        }
+    
+}

@@ -1,0 +1,25 @@
+#About {
+    height: 400px;
+    
+}
+.about h2{
+    color: black;
+    text-align: center;
+}
+  .text-justify{
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+/* h2{
+    color: #000;
+} */
+
+
+ .about-img{
+    width: 200px;
+    height: 200px;
+    transform: translate(-100%,10%);
+    margin:auto;
+    
+}
